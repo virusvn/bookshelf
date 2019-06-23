@@ -6,7 +6,8 @@ class MediaGroupModel {
     
     MediaGroupModel(result){
         _separator = result["separator"];
-        List<MediaModel> _tmp_list;   
+        print(result["separator"]);
+        List<MediaModel> _tmp_list = [];   
         for (int i =0; i < result["data"].length; i++){
             MediaModel media = MediaModel(result["data"][i]);
             _tmp_list.add(media);

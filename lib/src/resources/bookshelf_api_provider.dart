@@ -11,11 +11,11 @@ class BookshelfApiProvider {
         final response = await client.get(_apiUrl);
         print(response.body.toString());
         if (response.statusCode == 200) {
-            // If the call to the server was successful, parse the JSON
-            return ResponseModel.fromJson(json.decode(response.body));
+            // If the call to the server was successful, parse the JSON, decode from utf8
+            return ResponseModel.fromJson(json.decode(utf8.decode(response.bodyBytes)));
         } else {
-        // If that call was not successful, throw an error.
-        throw Exception('Failed to load api');
+            // If that call was not successful, throw an error.
+            throw Exception('Failed to load api');
         }
     }
 }
