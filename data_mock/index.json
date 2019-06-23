@@ -1,0 +1,780 @@
+{
+    "meta": {
+        "domain": "http:\/\/bookshelf.brangista.com\/",
+        "method": "GET"
+    },
+    "response": {
+        "version": "1.2.3",
+        "groups": [
+            {
+                "separator": "",
+                "data": [
+                    {
+                        "media": {
+                            "id": "8",
+                            "name": "SUPER CEO",
+                            "image": "files\/media\/super-ceo-1560494659.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-01-26 09:01:35",
+                            "description": "SUPER CEO",
+                            "order": "0",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/test.superceo.jp",
+                            "url_stg": "http:\/\/stg.superceo.jp",
+                            "url_prod": "http:\/\/superceo.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=004",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/super-ceo-1554805072.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/8.json"
+                            },
+                            "latest_publish_date": "2019-06-14"
+                        },
+                        "magazines": [
+                            "417",
+                            "407",
+                            "398",
+                            "387",
+                            "374",
+                            "362",
+                            "348",
+                            "338",
+                            "327",
+                            "319",
+                            "309",
+                            "299",
+                            "280",
+                            "272",
+                            "264",
+                            "257",
+                            "247",
+                            "236",
+                            "226",
+                            "215",
+                            "205",
+                            "195",
+                            "185",
+                            "175",
+                            "157",
+                            "91",
+                            "77",
+                            "44",
+                            "40",
+                            "41",
+                            "42",
+                            "43",
+                            "19",
+                            "81",
+                            "80",
+                            "79",
+                            "78",
+                            "76"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "13",
+                            "name": "マドリーム",
+                            "image": "files\/media\/マドリーム-1560145820.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-04-16 11:58:41",
+                            "description": "マドリーム",
+                            "order": "1",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/brangista:madream1183@test.madream.jp",
+                            "url_stg": "http:\/\/stg.madream.jp",
+                            "url_prod": "http:\/\/madream.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=011",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/マドリーム-1503293928.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/13.json"
+                            },
+                            "latest_publish_date": "2019-06-11"
+                        },
+                        "magazines": [
+                            "416",
+                            "409",
+                            "399",
+                            "388",
+                            "375",
+                            "363",
+                            "349",
+                            "343",
+                            "329",
+                            "320",
+                            "312",
+                            "300",
+                            "282",
+                            "273",
+                            "265",
+                            "258",
+                            "248",
+                            "239",
+                            "227",
+                            "216",
+                            "207",
+                            "196",
+                            "184",
+                            "176",
+                            "160",
+                            "93"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "32",
+                            "name": "LiSTA",
+                            "image": "files\/media\/lista-1559205605.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2018-04-04 15:38:01",
+                            "description": "リスト",
+                            "order": "2",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/shoplista.com",
+                            "url_stg": "https:\/\/shoplista.com",
+                            "url_prod": "https:\/\/shoplista.com",
+                            "analytics_uri": "",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/ショップリスト-1522824833.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/32.json"
+                            },
+                            "latest_publish_date": "2019-06-03"
+                        },
+                        "magazines": [
+                            "415",
+                            "403",
+                            "378",
+                            "368",
+                            "352",
+                            "337"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "7",
+                            "name": "旅色",
+                            "image": "files\/media\/旅色-1558665859.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-01-26 09:00:15",
+                            "description": "旅色",
+                            "order": "3",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/test.tabiiro.jp",
+                            "url_stg": "https:\/\/brangista:tabiiro1183@staging.tabiiro.jp",
+                            "url_prod": "https:\/\/tabiiro.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=001",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/旅色-1551056680.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/7.json"
+                            },
+                            "latest_publish_date": "2019-05-27"
+                        },
+                        "magazines": [
+                            "414",
+                            "410",
+                            "405",
+                            "400",
+                            "394",
+                            "390",
+                            "381",
+                            "376",
+                            "371",
+                            "364",
+                            "355",
+                            "350",
+                            "346",
+                            "344",
+                            "334",
+                            "332",
+                            "325",
+                            "322",
+                            "317",
+                            "314",
+                            "306",
+                            "302",
+                            "296",
+                            "291",
+                            "279",
+                            "276",
+                            "271",
+                            "267",
+                            "263",
+                            "259",
+                            "256",
+                            "249",
+                            "245",
+                            "240",
+                            "229",
+                            "225",
+                            "219",
+                            "214",
+                            "209",
+                            "204",
+                            "199",
+                            "194",
+                            "187",
+                            "183",
+                            "178",
+                            "174",
+                            "165",
+                            "153",
+                            "100",
+                            "84",
+                            "56",
+                            "57",
+                            "46",
+                            "45",
+                            "58",
+                            "23",
+                            "24",
+                            "25",
+                            "26",
+                            "27",
+                            "50",
+                            "51",
+                            "52",
+                            "53",
+                            "54",
+                            "59",
+                            "60",
+                            "61"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "4",
+                            "name": "GOODA",
+                            "image": "files\/media\/gooda-1557811138.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-01-26 08:56:06",
+                            "description": "test",
+                            "order": "4",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/test.gooda.brangista.com",
+                            "url_stg": "http:\/\/brangista:gooda1183@stg.gooda.brangista.com",
+                            "url_prod": "http:\/\/gooda.brangista.com",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=003",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/gooda-1497610307.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/4.json"
+                            },
+                            "latest_publish_date": "2019-05-15"
+                        },
+                        "magazines": [
+                            "413",
+                            "404",
+                            "393",
+                            "379",
+                            "369",
+                            "354",
+                            "345",
+                            "333",
+                            "324",
+                            "316",
+                            "305",
+                            "295",
+                            "278",
+                            "270",
+                            "262",
+                            "253",
+                            "243",
+                            "233",
+                            "222",
+                            "212",
+                            "202",
+                            "191",
+                            "181",
+                            "172",
+                            "111",
+                            "82",
+                            "75",
+                            "33",
+                            "34",
+                            "74",
+                            "73",
+                            "72",
+                            "70",
+                            "69",
+                            "68",
+                            "67",
+                            "66",
+                            "71",
+                            "65",
+                            "64",
+                            "8"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "34",
+                            "name": "タベサキ",
+                            "image": "files\/media\/タベサキ-1556183626.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2018-08-29 18:56:06",
+                            "description": "",
+                            "order": "5",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/test.tabiiro.jp",
+                            "url_stg": "https:\/\/staging.tabiiro.jp",
+                            "url_prod": "https:\/\/tabiiro.jp",
+                            "analytics_uri": "",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/タベサキ-1535537680.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/34.json"
+                            },
+                            "latest_publish_date": "2019-04-26"
+                        },
+                        "magazines": [
+                            "412",
+                            "402",
+                            "392",
+                            "377",
+                            "367"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "30",
+                            "name": "HowB",
+                            "image": "files\/media\/howb-1554962122.jpeg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2018-02-20 17:35:49",
+                            "description": "HowB",
+                            "order": "6",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/brangista:brangista@howb.me",
+                            "url_stg": "https:\/\/brangista:brangista@howb.me",
+                            "url_prod": "https:\/\/howb.me",
+                            "analytics_uri": "",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/howb-1519121157.jpg",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/30.json"
+                            },
+                            "latest_publish_date": "2019-04-12"
+                        },
+                        "magazines": [
+                            "408",
+                            "385",
+                            "372",
+                            "366",
+                            "357",
+                            "353",
+                            "339",
+                            "330"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "14",
+                            "name": "BonMariage",
+                            "image": "files\/media\/bonmariage-1553571209.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-11-13 13:16:11",
+                            "description": "ハッピーオーラ<br \/>\r\nウエディング",
+                            "order": "7",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/brangista:b-mariage1183@test.b-mariage.jp",
+                            "url_stg": "http:\/\/brangista:b-mariage1183@stg.b-mariage.jp",
+                            "url_prod": "https:\/\/b-mariage.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=012",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/bonmariage-1497873660.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/14.json"
+                            },
+                            "latest_publish_date": "2019-03-27"
+                        },
+                        "magazines": [
+                            "406",
+                            "384",
+                            "358",
+                            "335",
+                            "318",
+                            "298",
+                            "266",
+                            "252",
+                            "237",
+                            "206",
+                            "192"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "28",
+                            "name": "飲み旅本。",
+                            "image": "files\/media\/飲み旅本-1548751122.png",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2017-10-12 13:02:41",
+                            "description": "飲み旅本。",
+                            "order": "9",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/testnomitabi.tabiiro.jp",
+                            "url_stg": "https:\/\/stgnomitabi.tabiiro.jp",
+                            "url_prod": "https:\/\/nomitabi.tabiiro.jp",
+                            "analytics_uri": "utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=016",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/飲み旅本-1507780961.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/28.json"
+                            },
+                            "latest_publish_date": "2019-01-30"
+                        },
+                        "magazines": [
+                            "396",
+                            "361",
+                            "326",
+                            "311"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "37",
+                            "name": "Double Eagle",
+                            "image": "files\/media\/double-eagle-1545276134.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2018-12-20 10:15:38",
+                            "description": "Double Eagle",
+                            "order": "10",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/double-eagle-golf.testchecksite.com",
+                            "url_stg": "http:\/\/stg.double-eagle-golf.testchecksite.com",
+                            "url_prod": "https:\/\/book.golf-de.com",
+                            "analytics_uri": "?utm_source=bookshelf&utm_medium=referral&utm_campaign=Brangista",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/double-eagle-1545276134.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/37.json"
+                            },
+                            "latest_publish_date": "2018-12-21"
+                        },
+                        "magazines": [
+                            "389"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "12",
+                            "name": "GINGER mirror",
+                            "image": "files\/media\/ginger-mirror-1542765128.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-04-16 11:52:47",
+                            "description": "GINGER mirror",
+                            "order": "11",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/mirror:r1026@testchecksite.com",
+                            "url_stg": "http:\/\/event.rakuten.co.jp",
+                            "url_prod": "http:\/\/event.rakuten.co.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=010",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/ginger-mirror-1542765128.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/12.json"
+                            },
+                            "latest_publish_date": "2018-11-22"
+                        },
+                        "magazines": [
+                            "380"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "6",
+                            "name": "政経電論",
+                            "image": "files\/media\/政経電論-1557975252.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2015-01-26 08:58:38",
+                            "description": "政経電論のテストです",
+                            "order": "12",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/seikeidenron.jp",
+                            "url_stg": "https:\/\/seikeidenron.jp",
+                            "url_prod": "https:\/\/seikeidenron.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=005",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/政経電論-1510545980.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/6.json"
+                            },
+                            "latest_publish_date": "2018-07-31"
+                        },
+                        "magazines": [
+                            "359",
+                            "340",
+                            "328",
+                            "310",
+                            "301",
+                            "294",
+                            "281",
+                            "277",
+                            "269",
+                            "261",
+                            "251",
+                            "242",
+                            "232",
+                            "221",
+                            "211",
+                            "201",
+                            "190",
+                            "180",
+                            "171",
+                            "103",
+                            "102",
+                            "155",
+                            "28",
+                            "35",
+                            "36",
+                            "37",
+                            "38",
+                            "89",
+                            "10"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "29",
+                            "name": "BeViVi",
+                            "image": "files\/media\/bevivi-1524191380.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2017-10-20 11:42:57",
+                            "description": "BeViVi",
+                            "order": "13",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/vivi.testchecksite.com\/be-vivi",
+                            "url_stg": "https:\/\/r10.to\/bevivi_bra",
+                            "url_prod": "https:\/\/r10.to\/bevivi_bra",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=018",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/be-vivi-1508467377.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/29.json"
+                            },
+                            "latest_publish_date": "2018-04-23"
+                        },
+                        "magazines": [
+                            "341"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "15",
+                            "name": "MaRiche",
+                            "image": "files\/media\/mariche-1513330583.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2017-06-12 16:49:37",
+                            "description": "MaRiche",
+                            "order": "15",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "http:\/\/test.mariche.jp",
+                            "url_stg": "http:\/\/stg.mariche.jp",
+                            "url_prod": "https:\/\/mariche.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=013",
+                            "is_active": "1",
+                            "selection_id": "1",
+                            "image_heading": "files\/media\/mariche-1497873576.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/15.json"
+                            },
+                            "latest_publish_date": "2017-12-19"
+                        },
+                        "magazines": [
+                            "321",
+                            "283"
+                        ]
+                    }
+                ]
+            },
+            {
+                "separator": "files\/selections\/旅色セレクション-1497866666.jpg",
+                "data": [
+                    {
+                        "media": {
+                            "id": "41",
+                            "name": "和歌山県エリア",
+                            "image": "files\/media\/和歌山県エリア-1556078567.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2019-04-24 13:02:47",
+                            "description": "【旅色セレクション】 和歌山県エリア",
+                            "order": "0",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/test.tabiiro.jp",
+                            "url_stg": "https:\/\/staging.tabiiro.jp",
+                            "url_prod": "https:\/\/tabiiro.jp",
+                            "analytics_uri": "",
+                            "is_active": "1",
+                            "selection_id": "2",
+                            "image_heading": "files\/media\/和歌山県エリア-1556078567.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/41.json"
+                            },
+                            "latest_publish_date": "2019-04-25"
+                        },
+                        "magazines": [
+                            "411"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "35",
+                            "name": "旅色セレクション【北海道】",
+                            "image": "files\/media\/鹿児島県エリア-1542875057.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2018-11-22 17:24:17",
+                            "description": "鹿児島県エリア",
+                            "order": "4",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/test.tabiiro.jp",
+                            "url_stg": "https:\/\/staging.tabiiro.jp",
+                            "url_prod": "https:\/\/test.tabiiro.jp",
+                            "analytics_uri": "",
+                            "is_active": "1",
+                            "selection_id": "2",
+                            "image_heading": "files\/media\/鹿児島県エリア-1542875057.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/35.json"
+                            },
+                            "latest_publish_date": "2018-11-26"
+                        },
+                        "magazines": [
+                            "382"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "33",
+                            "name": "旅色セレクション［鳥取県］",
+                            "image": "files\/media\/旅色セレクション-鳥取県-1551057035.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2018-08-24 17:08:03",
+                            "description": "",
+                            "order": "6",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/brangistatest.tabiiro.jp",
+                            "url_stg": "https:\/\/staging.tabiiro.jp",
+                            "url_prod": "https:\/\/tabiiro.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=001",
+                            "is_active": "1",
+                            "selection_id": "2",
+                            "image_heading": "files\/media\/旅色セレクション-鳥取県-1535098083.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/33.json"
+                            },
+                            "latest_publish_date": "2018-08-27"
+                        },
+                        "magazines": [
+                            "365"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "22",
+                            "name": "旅色セレクション［北海道］",
+                            "image": "files\/media\/旅色セレクション-北海道-1532430999.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2017-06-19 20:03:47",
+                            "description": "",
+                            "order": "7",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/brangistatest.tabiiro.jp",
+                            "url_stg": "https:\/\/staging.tabiiro.jp",
+                            "url_prod": "https:\/\/tabiiro.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=001",
+                            "is_active": "1",
+                            "selection_id": "2",
+                            "image_heading": "files\/media\/旅色セレクション-上川町-1497870227.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/22.json"
+                            },
+                            "latest_publish_date": "2018-07-25"
+                        },
+                        "magazines": [
+                            "356"
+                        ]
+                    },
+                    {
+                        "media": {
+                            "id": "19",
+                            "name": "旅色セレクション［福岡］",
+                            "image": "files\/media\/福岡-1497610011.jpg",
+                            "updated": "2019-06-14 15:44:22",
+                            "created": "2017-06-16 19:46:51",
+                            "description": "",
+                            "order": "10",
+                            "is_staged": "2",
+                            "is_confirmed": false,
+                            "can_delete": false,
+                            "url_test": "https:\/\/brangistatest.tabiiro.jp",
+                            "url_stg": "https:\/\/staging.tabiiro.jp",
+                            "url_prod": "https:\/\/tabiiro.jp",
+                            "analytics_uri": "?utm_source=app&utm_medium=app&utm_term=bookshelf&utm_campaign=001",
+                            "is_active": "1",
+                            "selection_id": "2",
+                            "image_heading": "files\/media\/旅色セレクション-福岡-1497870106.png",
+                            "StagingMedia": {
+                                "_api": "api\/v2.0\/media\/view\/19.json"
+                            },
+                            "latest_publish_date": "2017-04-25"
+                        },
+                        "magazines": [
+                            "288"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

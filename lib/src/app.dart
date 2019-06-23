@@ -8,7 +8,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       home: Scaffold(
-        body: MediaGroupList(),
+        body: SafeArea(child: MediaGroupList()),
       ),
     );
   }
