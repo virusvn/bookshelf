@@ -1,6 +1,7 @@
 import 'package:bookshelf/src/models/media.dart';
 import 'package:flutter/material.dart';
 import '../blocs/groups_bloc.dart';
+import './magazine_screen.dart';
 
 class MediaScreen extends StatelessWidget {
   // Declare a field that holds the media.
@@ -26,7 +27,18 @@ class MediaScreen extends StatelessWidget {
             return ListView.builder(
               itemCount: snapshot.data.magazines.length,
               itemBuilder: (context, index) {
-                return Text(snapshot.data.magazines[index].number);
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MagazineScreen(
+                            magazine: snapshot.data.magazines[index]),
+                      ),
+                    );
+                  },
+                  child: Text(snapshot.data.magazines[index].number),
+                );
               },
             );
           } else if (snapshot.hasError) {
