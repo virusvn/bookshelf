@@ -1,5 +1,6 @@
 import 'package:bookshelf/src/models/media_group.dart';
 import 'package:flutter/material.dart';
+import 'package:transparent_image/transparent_image.dart';
 import '../models/response_model.dart';
 import '../blocs/groups_bloc.dart';
 
@@ -31,8 +32,10 @@ class MediaGroupList extends StatelessWidget {
         if (snapshot.data.groups[index].separator != "") {
           return Column(
             children: <Widget>[
-              Image.network(
-                '${snapshot.data.domain}${snapshot.data.groups[index].separator}',
+              FadeInImage.memoryNetwork(
+                placeholder: kTransparentImage,
+                image:
+                    '${snapshot.data.domain}${snapshot.data.groups[index].separator}',
               ),
               buildMediaList(snapshot.data.domain, snapshot.data.groups[index])
             ],
@@ -59,8 +62,9 @@ class MediaGroupList extends StatelessWidget {
           if (group.media_list[index].image != "") {
             return Padding(
                 padding: EdgeInsets.all(0.0),
-                child: Image.network(
-                  '${domain}${group.media_list[index].image}',
+                child: FadeInImage.memoryNetwork(
+                  placeholder: kTransparentImage,
+                  image: '${domain}${group.media_list[index].image}',
                   fit: BoxFit.fitHeight,
                 ));
           }
