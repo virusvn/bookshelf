@@ -22,12 +22,12 @@ class BookshelfApiProvider {
   }
 
   Future<MediaModel> fetchMedia(MediaModel media) async {
-    final response =
-        await client.get(_apiMediaUrl + media.id.toString() + ".json");
+    final url = _apiMediaUrl + media.id.toString() + ".json";
+    print(url);
+    final response = await client.get(url);
     if (response.statusCode == 200) {
       // If the call to the server was successful, parse the JSON, decode from utf8
-      media.magazines = MediaModel.magazinesFromJson(
-          json.decode(utf8.decode(response.bodyBytes)));
+      media.magazinesFromJson(json.decode(utf8.decode(response.bodyBytes)));
       return media;
     } else {
       // If that call was not successful, throw an error.

@@ -43,14 +43,16 @@ class MediaModel {
     }
     _magazine_ids = _tmp_magazine_ids;
   }
-  MediaModel.magazinesFromJson(result) {
+  List<Magazine> magazinesFromJson(result) {
     List<Magazine> _tmp_magazines = [];
-    for (int i = 0; i < result["magazines"].length; i++) {
-      Magazine magazine = Magazine(result["magazines"][i]);
+    for (int i = 0; i < result["response"]["magazines"].length; i++) {
+      Magazine magazine = Magazine(result["response"]["magazines"][i]);
       _tmp_magazines.add(magazine);
     }
     _magazines = _tmp_magazines;
+    return _tmp_magazines;
   }
+
   int get id => _id;
   String get name => _name;
   String get image => _image;

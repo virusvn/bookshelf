@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 import '../models/response_model.dart';
 import '../blocs/groups_bloc.dart';
+import './media_screen.dart';
 
 class MediaGroupList extends StatelessWidget {
   @override
@@ -60,8 +61,16 @@ class MediaGroupList extends StatelessWidget {
             new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
           if (group.media_list[index].image != "") {
-            return Padding(
-                padding: EdgeInsets.all(0.0),
+            return GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          MediaScreen(media: group.media_list[index]),
+                    ),
+                  );
+                },
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
                   image: '${domain}${group.media_list[index].image}',
