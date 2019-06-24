@@ -24,37 +24,47 @@ class MediaGroupList extends StatelessWidget {
       ),
     );
   }
+
   Widget buildGroupList(AsyncSnapshot<ResponseModel> snapshot) {
-    return GridView.builder(
-        itemCount: snapshot.data.groups.length,
-        gridDelegate:
-            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
-        itemBuilder: (BuildContext context, int index) {
-            if (snapshot.data.groups.length > 0){
-                print('${snapshot.data.domain}${snapshot.data.groups[index].separator}');
-        //   return Image.network(
-        //     '${snapshot.data.domain}${snapshot.data.groups[index].separator}',
-        //     fit: BoxFit.cover,
-        //   );
-            return buildMediaList(snapshot.data.domain, snapshot.data.groups[index]);
-          }
-          return Text("No image");
-        });
+    return ListView.builder(
+      itemBuilder: (context, index) {
+        if (snapshot.data.groups[index].separator != "") {
+          return Column(
+            children: <Widget>[
+              Image.network(
+                '${snapshot.data.domain}${snapshot.data.groups[index].separator}',
+              ),
+              buildMediaList(snapshot.data.domain, snapshot.data.groups[index])
+            ],
+          );
+        }
+        return Column(
+          children: <Widget>[
+            buildMediaList(snapshot.data.domain, snapshot.data.groups[index])
+          ],
+        );
+      },
+      itemCount: snapshot.data.groups.length, // this is a hardcoded value
+    );
   }
+
   Widget buildMediaList(String domain, MediaGroupModel group) {
     return GridView.builder(
+        shrinkWrap: true,
+        physics: ClampingScrollPhysics(),
         itemCount: group.media_list.length,
         gridDelegate:
             new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (BuildContext context, int index) {
-            if (group.media_list[index].image != ""){
-          return Image.network(
-            '${domain}${group.media_list[index].image}',
-            fit: BoxFit.cover,
-          );
+          if (group.media_list[index].image != "") {
+            return Padding(
+                padding: EdgeInsets.all(0.0),
+                child: Image.network(
+                  '${domain}${group.media_list[index].image}',
+                  fit: BoxFit.fitHeight,
+                ));
           }
           return Text("No image");
         });
   }
 }
-
