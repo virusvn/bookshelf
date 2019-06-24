@@ -1,3 +1,5 @@
+import 'magazine.dart';
+
 class MediaModel {
   int _id;
   String _name;
@@ -12,7 +14,8 @@ class MediaModel {
   String _analytic_params;
   bool _is_active;
   int _group_id;
-  List<int> _magazines = [];
+  List<int> _magazine_ids = [];
+  List<Magazine> _magazines = [];
   String _image_heading;
   String _detail_api;
   String _latest_published_date;
@@ -34,6 +37,19 @@ class MediaModel {
     _image_heading = result["media"]["image_heading"];
     _detail_api = result["media"]["StagingMedia"]["_api"];
     _latest_published_date = result["media"]["latest_publish_date"];
+    List<int> _tmp_magazine_ids = [];
+    for (int i = 0; i < result["magazines"].length; i++) {
+      _tmp_magazine_ids.add(int.parse(result["magazines"][i]));
+    }
+    _magazine_ids = _tmp_magazine_ids;
+  }
+  MediaModel.magazinesFromJson(result) {
+    List<Magazine> _tmp_magazines = [];
+    for (int i = 0; i < result["magazines"].length; i++) {
+      Magazine magazine = Magazine(result["magazines"][i]);
+      _tmp_magazines.add(magazine);
+    }
+    _magazines = _tmp_magazines;
   }
   int get id => _id;
   String get name => _name;
@@ -48,7 +64,12 @@ class MediaModel {
   String get analytic_params => _analytic_params;
   bool get is_active => _is_active;
   int get group_id => _group_id;
-  List<int> get magazines => _magazines;
+  List<int> get magazine_ids => _magazine_ids;
+  List<Magazine> get magazines => _magazines;
+  void set magazines(data) {
+    _magazines = data;
+  }
+
   String get image_heading => _image_heading;
   String get detail_api => _detail_api;
   String get latest_published_date => _latest_published_date;
