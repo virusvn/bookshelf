@@ -18,3 +18,13 @@ samples, guidance on mobile development, and a full API reference.
 ## Ref
 
 http://myhexaville.com/2018/06/04/flutter-nested-listview/
+
+
+## The problems:
+
+https://pub.dev/packages/webview_flutter is not works, we need to install and setup pod
+On Mac OS
+```
+brew install cocoapods
+pod setup
+```
