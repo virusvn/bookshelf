@@ -37,7 +37,7 @@ class MediaScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text(snapshot.data.magazines[index].number),
+                  child: Text(snapshot.data.magazines[index].name),
                 );
               },
             );
