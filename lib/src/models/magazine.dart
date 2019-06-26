@@ -8,12 +8,12 @@ class Magazine {
   String _published_time;
   String _number;
 
-  Magazine(result) {
+  Magazine(domain, result) {
     _id = int.parse(result["id"]);
     _media_id = int.parse(result["media_id"]);
     _url = result["url"];
     _description = result["description"];
-    _image = result["image"];
+    _image = domain + result["image"];
     _published_time = result["publish_time"];
     _number = result["number"];
     _name = result["name"];

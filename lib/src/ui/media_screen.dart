@@ -3,18 +3,29 @@ import 'package:flutter/material.dart';
 import '../blocs/groups_bloc.dart';
 import './magazine_screen.dart';
 
-class MediaScreen extends StatelessWidget {
-  // Declare a field that holds the media.
+class MediaScreen extends StatefulWidget {
   final MediaModel media;
-
-  // In the constructor, require a media.
   MediaScreen({Key key, @required this.media}) : super(key: key);
+  _MediaScreenState createState() => _MediaScreenState(media: this.media);
+}
+
+class _MediaScreenState extends State<MediaScreen>
+    with SingleTickerProviderStateMixin {
+  final MediaModel media;
+  AnimationController _animationController;
+  _MediaScreenState({Key key, @required this.media});
+  @override
+  void initState() {
+    _animationController = new AnimationController(
+        duration: const Duration(seconds: 2), vsync: this);
+    bloc.fetchMedia(media);
+    super.initState();
+    // start animation
+    _animationController.forward();
+  }
 
   @override
   Widget build(BuildContext context) {
-    bloc.fetchMedia(media);
-
-    // Use the media to create the UI.
     return Scaffold(
       appBar: AppBar(
         title: Text(media.name),
@@ -23,7 +34,6 @@ class MediaScreen extends StatelessWidget {
         stream: bloc.media,
         builder: (context, AsyncSnapshot<MediaModel> snapshot) {
           if (snapshot.hasData) {
-            print(snapshot.data.magazines);
             return ListView.builder(
               itemCount: snapshot.data.magazines.length,
               itemBuilder: (context, index) {
@@ -37,7 +47,23 @@ class MediaScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text(snapshot.data.magazines[index].name),
+                  child: new AnimatedBuilder(
+                    animation: _animationController,
+                    builder: (context, child) {
+                      return new Transform(
+                        transform: Matrix4.identity()
+                          ..setEntry(3, 2, 0.001)
+                          ..rotateZ(_animationController.value * 45.0),
+                        child: child,
+                      );
+                    },
+                    child: Container(
+                      width: 100,
+                      height: 100,
+                      child:
+                          Image.network(snapshot.data.magazines[index].image),
+                    ),
+                  ),
                 );
               },
             );

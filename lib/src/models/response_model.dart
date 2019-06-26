@@ -10,7 +10,7 @@ class ResponseModel {
     List<MediaGroupModel> tmp_groups = [];
     for (int i = 0; i < parsedJson["response"]["groups"].length; i++) {
       MediaGroupModel group =
-          MediaGroupModel(parsedJson["response"]["groups"][i]);
+          MediaGroupModel(_domain, parsedJson["response"]["groups"][i]);
       tmp_groups.add(group);
     }
     _groups = tmp_groups;

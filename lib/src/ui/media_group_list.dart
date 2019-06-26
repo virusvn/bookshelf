@@ -35,24 +35,21 @@ class MediaGroupList extends StatelessWidget {
             children: <Widget>[
               FadeInImage.memoryNetwork(
                 placeholder: kTransparentImage,
-                image:
-                    '${snapshot.data.domain}${snapshot.data.groups[index].separator}',
+                image: '${snapshot.data.groups[index].separator}',
               ),
-              buildMediaList(snapshot.data.domain, snapshot.data.groups[index])
+              buildMediaList(snapshot.data.groups[index])
             ],
           );
         }
         return Column(
-          children: <Widget>[
-            buildMediaList(snapshot.data.domain, snapshot.data.groups[index])
-          ],
+          children: <Widget>[buildMediaList(snapshot.data.groups[index])],
         );
       },
       itemCount: snapshot.data.groups.length, // this is a hardcoded value
     );
   }
 
-  Widget buildMediaList(String domain, MediaGroupModel group) {
+  Widget buildMediaList(MediaGroupModel group) {
     return GridView.builder(
         shrinkWrap: true,
         physics: ClampingScrollPhysics(),
@@ -73,7 +70,7 @@ class MediaGroupList extends StatelessWidget {
                 },
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
-                  image: '${domain}${group.media_list[index].image}',
+                  image: '${group.media_list[index].image}',
                   fit: BoxFit.fitHeight,
                 ));
           }
