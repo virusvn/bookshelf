@@ -5,10 +5,27 @@ import '../models/response_model.dart';
 import '../blocs/groups_bloc.dart';
 import './media_screen.dart';
 
-class MediaGroupList extends StatelessWidget {
+class MediaGroupScreen extends StatefulWidget {
+  MediaGroupScreen({Key key}) : super(key: key);
+
+  _MediaGroupScreenState createState() => _MediaGroupScreenState();
+}
+
+class _MediaGroupScreenState extends State<MediaGroupScreen>
+    with SingleTickerProviderStateMixin {
+  @override
+  void initState() {
+    super.initState();
+    bloc.fetchAllGroups();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    bloc.fetchAllGroups();
     return Scaffold(
       appBar: AppBar(
         title: Text('Bookshelf'),

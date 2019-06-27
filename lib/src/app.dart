@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ui/media_group_list.dart';
+import 'ui/media_group_screen.dart';
 
 class App extends StatelessWidget {
   @override
@@ -9,7 +9,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light(),
       home: Scaffold(
-        body: SafeArea(child: MediaGroupList()),
+        body: SafeArea(child: MediaGroupScreen()),
       ),
     );
   }
