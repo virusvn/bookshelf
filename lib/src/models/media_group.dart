@@ -5,7 +5,7 @@ class MediaGroupModel {
   List<MediaModel> _media_list;
 
   MediaGroupModel(domain, result) {
-    _separator = result["separator"];
+    _separator = domain + result["separator"];
     List<MediaModel> _tmp_list = [];
     for (int i = 0; i < result["data"].length; i++) {
       MediaModel media = MediaModel(domain, result["data"][i]);
