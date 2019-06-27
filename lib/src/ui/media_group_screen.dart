@@ -21,8 +21,7 @@ class _MediaGroupScreenState extends State<MediaGroupScreen>
 
   @override
   void dispose() {
-    // We can't dispose this bloc, because it needs to add magazines later
-    // bloc.dispose();
+    bloc.dispose();
     super.dispose();
   }
 
