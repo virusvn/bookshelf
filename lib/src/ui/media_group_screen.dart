@@ -21,6 +21,7 @@ class _MediaGroupScreenState extends State<MediaGroupScreen>
 
   @override
   void dispose() {
+    bloc.dispose();
     super.dispose();
   }
 
@@ -88,7 +89,9 @@ class _MediaGroupScreenState extends State<MediaGroupScreen>
                 child: FadeInImage.memoryNetwork(
                   placeholder: kTransparentImage,
                   image: '${group.media_list[index].image}',
-                  fit: BoxFit.fitHeight,
+                  width: 50,
+                  height: 50,
+                  //   fit: BoxFit.fitHeight,
                 ));
           }
           return Text("No image");

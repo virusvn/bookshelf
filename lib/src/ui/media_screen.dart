@@ -25,6 +25,12 @@ class _MediaScreenState extends State<MediaScreen>
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    bloc.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -53,7 +59,7 @@ class _MediaScreenState extends State<MediaScreen>
                       return new Transform(
                         transform: Matrix4.identity()
                           ..setEntry(3, 2, 0.001)
-                          ..rotateZ(_animationController.value * 45.0),
+                          ..rotateY(_animationController.value * 45.0),
                         child: child,
                       );
                     },
