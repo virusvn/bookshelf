@@ -5,7 +5,12 @@ class MediaGroupModel {
   List<MediaModel> _media_list;
 
   MediaGroupModel(domain, result) {
-    _separator = domain + result["separator"];
+    // Only add domain if have image
+    if (result["separator"] != "") {
+      _separator = domain + result["separator"];
+    } else {
+      _separator = "";
+    }
     List<MediaModel> _tmp_list = [];
     for (int i = 0; i < result["data"].length; i++) {
       MediaModel media = MediaModel(domain, result["data"][i]);

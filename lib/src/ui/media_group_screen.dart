@@ -21,7 +21,8 @@ class _MediaGroupScreenState extends State<MediaGroupScreen>
 
   @override
   void dispose() {
-    bloc.dispose();
+    // We can't dispose this bloc, because it needs to add magazines later
+    // bloc.dispose();
     super.dispose();
   }
 
@@ -72,29 +73,30 @@ class _MediaGroupScreenState extends State<MediaGroupScreen>
         shrinkWrap: true,
         physics: ClampingScrollPhysics(),
         itemCount: group.media_list.length,
-        gridDelegate:
-            new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 3 / 4,
+            crossAxisSpacing: 5.0,
+            mainAxisSpacing: 5.0),
         itemBuilder: (BuildContext context, int index) {
-          if (group.media_list[index].image != "") {
-            return GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) =>
-                          MediaScreen(media: group.media_list[index]),
-                    ),
-                  );
-                },
-                child: FadeInImage.memoryNetwork(
-                  placeholder: kTransparentImage,
-                  image: '${group.media_list[index].image}',
-                  width: 50,
-                  height: 50,
-                  //   fit: BoxFit.fitHeight,
-                ));
-          }
-          return Text("No image");
+          return group.media_list[index].image != ""
+              ? Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                MediaScreen(media: group.media_list[index]),
+                          ),
+                        );
+                      },
+                      child: FadeInImage.memoryNetwork(
+                          placeholder: kTransparentImage,
+                          image: '${group.media_list[index].image}',
+                          fit: BoxFit.cover)))
+              : null;
         });
   }
 }

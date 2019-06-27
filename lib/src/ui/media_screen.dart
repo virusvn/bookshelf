@@ -17,7 +17,7 @@ class _MediaScreenState extends State<MediaScreen>
   @override
   void initState() {
     _animationController = new AnimationController(
-        duration: const Duration(seconds: 2), vsync: this);
+        duration: const Duration(milliseconds: 200), vsync: this);
     bloc.fetchMedia(media);
     super.initState();
     // start animation
@@ -27,7 +27,8 @@ class _MediaScreenState extends State<MediaScreen>
   @override
   void dispose() {
     super.dispose();
-    bloc.dispose();
+    // We can't dispose this bloc, because it needs to add magazines later
+    // bloc.dispose();
   }
 
   @override
